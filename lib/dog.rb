@@ -57,7 +57,7 @@ attr_reader :id
   def self.create(hash_attr)
     binding.pry
 
-  end 
+  end
 
 
 end

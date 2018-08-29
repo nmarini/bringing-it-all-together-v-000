@@ -36,7 +36,7 @@ attr_reader :id
     SQL
 
     results = DB[:conn].execute(sql, name)
-    binding.pry
+
 
   end
 

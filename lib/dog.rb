@@ -40,5 +40,9 @@ attr_reader :id
 
   end
 
+  def save 
+    
+  end 
+
 
 end

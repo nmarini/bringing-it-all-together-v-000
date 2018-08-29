@@ -54,5 +54,10 @@ attr_reader :id
     self
   end
 
+  def self.create(hash_attr)
+    binding.pry
+
+  end 
+
 
 end

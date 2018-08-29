@@ -55,8 +55,8 @@ attr_reader :id
   end
 
   def self.create(hash_attr)
-    # new_dog = Dog.new(name: hash_attr[:name], breed: hash_attr[:breed])
-    # new_dog.save
+    new_dog = Dog.new(name: hash_attr[:name], breed: hash_attr[:breed])
+    new_dog.save
 binding.pry
   end
 

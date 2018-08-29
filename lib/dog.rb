@@ -61,8 +61,7 @@ attr_reader :id
 
   def update
     sql = <<-SQL
-      INSERT INTO dogs (name, breed)
-      VALUES (?, ?)
+      UPDATE dogs SET name = ?, breed = ?
       WHERE id = ?
     SQL
 

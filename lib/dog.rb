@@ -45,7 +45,7 @@ attr_reader :id
     else
       sql = <<-SQL
         INSERT INTO dogs (name, breed)
-        VALUES (?, ?)
+        VALUES ?, ?
         WHERE id = ?
       SQL
 

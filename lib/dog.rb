@@ -40,7 +40,7 @@ attr_reader :id
   end
 
   def save
-    if self.id 
+    if self.id
       self.update
     else
       sql = <<-SQL
@@ -51,6 +51,7 @@ attr_reader :id
 
       DB[:conn].execute(sql, self.name, self.bred, self.id)
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
+    end
   end
 
 

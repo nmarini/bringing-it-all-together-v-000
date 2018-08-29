@@ -30,9 +30,9 @@ attr_reader :id
   end
 
   def self.find_by_name(name)
-    sql = <<-SQL 
-      SELECT * FROM dogs 
-      WHERE name = ? 
+    sql = <<-SQL
+      SELECT * FROM dogs
+      WHERE name = ?
     SQL
 
     results = DB[:conn].execute(sql, name)

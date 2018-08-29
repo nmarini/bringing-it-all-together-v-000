@@ -26,9 +26,9 @@ attr_reader :id
   end
 
   def self.new_from_db
-    
-  end 
-  
+
+  end
+
 
 
 end

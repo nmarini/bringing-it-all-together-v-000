@@ -60,12 +60,8 @@ attr_reader :id
   end
 
   def update
-    sql = <<-SQL
-      UPDATE dogs SET name = ?, breed = ?
-      WHERE id = ?
-    SQL
-
-    DB[:conn].execute(sql, self.name, self.breed, self.id)
+    sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
+    DB[:conn].execute(sql, self.name, self.breed, self.id)[0][0]
   end
 
 

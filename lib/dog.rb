@@ -35,8 +35,8 @@ attr_reader :id
       WHERE name = ?
     SQL
 
-    results = DB[:conn].execute(sql, name)
-
+    # results = DB[:conn].execute(sql, name)
+bindnig.pry
 
   end
 

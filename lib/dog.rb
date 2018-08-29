@@ -49,7 +49,7 @@ attr_reader :id
         WHERE id = ?
       SQL
 
-      DB[:conn].execute(sql, self.name, self.bred, self.id)
+      DB[:conn].execute(sql, self.name, self.breed, self.id)
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
     end
   end

@@ -37,12 +37,11 @@ attr_reader :id
 
     results = DB[:conn].execute(sql, name)
     Dog.new_from_db(results)
-
   end
 
-  def save 
-    
-  end 
+  def save
+
+  end
 
 
 end
